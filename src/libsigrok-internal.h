@@ -33,6 +33,9 @@
 #ifdef HAVE_LIBSERIALPORT
 #include <libserialport.h>
 #endif
+#ifdef HAVE_LIBIIO
+#include <libiio.h>
+#endif
 
 struct zip;
 struct zip_stat;

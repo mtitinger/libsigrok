@@ -96,6 +96,9 @@ SR_EXTRA_LIBS=
 SR_ARG_OPT_PKG([libserialport], [LIBSERIALPORT], [NEED_SERIAL],
 	[libserialport >= 0.1.1])
 
+SR_ARG_OPT_PKG([libiio], [LIBIIO],,
+	[libiio >= 0.1.1])
+
 SR_ARG_OPT_PKG([libftdi], [LIBFTDI],,
 	[libftdi1 >= 1.0], [libftdi >= 0.16])
 
