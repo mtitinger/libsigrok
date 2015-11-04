@@ -22,7 +22,7 @@
 #include <time.h>
 #include <sys/timerfd.h>
 
-SR_PRIV struct sr_dev_driver baylibre_acme_driver_info;
+SR_PRIV struct sr_dev_driver generic_iio_driver_info;
 
 static const uint32_t devopts[] = {
 	SR_CONF_CONTINUOUS | SR_CONF_SET,
@@ -427,7 +427,7 @@ static int dev_acquisition_stop(struct sr_dev_inst *sdi, void *cb_data)
 	return SR_OK;
 }
 
-SR_PRIV struct sr_dev_driver baylibre_acme_driver_info = {
+SR_PRIV struct sr_dev_driver generic_iio_driver_info = {
 	.name = "generic-iio",
 	.longname = "Generic IIO wrapper",
 	.api_version = 1,
